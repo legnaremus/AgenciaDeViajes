@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/destinos',function(){
+    return view('destinos');
+});
+
+Route::get('/paquetes',function(){
+    return view('paquetes');
+});
+
+Route::get('/agentes',function(){
+    return view('agentes');
+});

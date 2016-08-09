@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CrearTablaUsuarios extends Migration
+class CrearTablaViaje extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,9 @@ class CrearTablaUsuarios extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('viaje', function (Blueprint $table) {
+            //
+        });
     }
 
     /**
@@ -22,6 +24,8 @@ class CrearTablaUsuarios extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('viaje', function (Blueprint $table) {
+            //
+        });
     }
 }

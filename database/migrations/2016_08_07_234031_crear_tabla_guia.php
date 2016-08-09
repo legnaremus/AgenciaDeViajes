@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CrearTablaDestinos extends Migration
+class CrearTablaGuia extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,9 @@ class CrearTablaDestinos extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('guia', function (Blueprint $table) {
+            //
+        });
     }
 
     /**
@@ -22,6 +24,8 @@ class CrearTablaDestinos extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('guia', function (Blueprint $table) {
+            //
+        });
     }
 }
